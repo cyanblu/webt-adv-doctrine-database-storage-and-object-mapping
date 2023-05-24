@@ -1,7 +1,6 @@
 <?php
-// src/bullet.php
-namespace Htlw3r\DoctrineDbal;
-use Doctrine\ORM\Mapping as ORM;
+namespace htlw3r\DoctrineDbal;
+
 
 #[ORM\Entity]
 #[ORM\Table(name: 'bullets')]
