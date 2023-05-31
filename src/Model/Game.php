@@ -24,6 +24,9 @@ class Game
      */
     private string $fk_symbol1;
     #[ORM\Column(type: 'integer')]
+    /**
+     * @ManyToOne(targetEntity="Symbol")
+     */
     private string $fk_symbol2;
 
     /**
