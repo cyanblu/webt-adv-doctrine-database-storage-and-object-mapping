@@ -1,5 +1,6 @@
 <?php
 // bootstrap.php
+namespace Htlw3r\DoctrineOrm;
 use Doctrine\DBAL\DriverManager;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\ORMSetup;
