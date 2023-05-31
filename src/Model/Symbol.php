@@ -1,5 +1,6 @@
 <?php
 
+namespace Htlw3r\DoctrineOrm\Model;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity]
@@ -11,9 +12,6 @@ class Symbol
 #[ORM\GeneratedValue]
 private int|null $pk_symbolID = null;
 #[ORM\Column(type: 'string', length: 2)]
-/**
- * @OneToMany(
- */
 private string $symbolPlayed;
 
     /**

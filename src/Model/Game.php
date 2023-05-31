@@ -1,7 +1,7 @@
 <?php
 
 // src/Bullet.php
-namespace Dreni\DoctrineOrm;
+namespace Htlw3r\DoctrineOrm\Model;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity]
@@ -19,6 +19,9 @@ class Game
     #[ORM\Column(type: 'string', length: 255)]
     private string $player2;
     #[ORM\Column(type: 'integer')]
+    /**
+     * @ManyToOne(targetEntity="Symbol")
+     */
     private string $fk_symbol1;
     #[ORM\Column(type: 'integer')]
     private string $fk_symbol2;
