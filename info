@@ -1,0 +1,6 @@
+repository funktions aufrufe
+insert, delete, update
+
+nurnoch php objekte
+
+php bin/doctrine orm:schema-tool:create
