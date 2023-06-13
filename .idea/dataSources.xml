@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:sqlite:C:\xampp\htdocs\dashboard\Webtech_Repositories\webt-adv-doctrine-database-storage-and-object-mapping\db.sqlite</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="db [2]" uuid="966a8dd8-7aa0-41e7-b962-0d48dc3423f8">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\xampp\htdocs\webtech\webt-adv-doctrine-database-storage-and-object-mapping\db.sqlite</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
