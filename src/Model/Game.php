@@ -3,6 +3,7 @@
 // src/Bullet.php
 namespace Htlw3r\DoctrineOrm\Model;
 use Doctrine\ORM\Mapping as ORM;
+use DateTime;
 
 #[ORM\Entity]
 #[ORM\Table(name: 'game')]
@@ -13,7 +14,7 @@ class Game
     #[ORM\GeneratedValue]
     private int|null $id = null;
     #[ORM\Column(type: 'datetime')]
-    private string $date;
+    private DateTime $date;
     #[ORM\Column(type: 'string', length: 255)]
     private string $player1;
     #[ORM\Column(type: 'string', length: 255)]
@@ -22,12 +23,12 @@ class Game
     /**
      * @ManyToOne(targetEntity="Symbol")
      */
-    private string $fk_symbol1;
+    private int $fk_symbol1;
     #[ORM\Column(type: 'integer')]
     /**
      * @ManyToOne(targetEntity="Symbol")
      */
-    private string $fk_symbol2;
+    private int $fk_symbol2;
 
     /**
      * @return int|null
@@ -48,7 +49,7 @@ class Game
     /**
      * @return string
      */
-    public function getDate(): string
+    public function getDate(): DateTime
     {
         return $this->date;
     }
@@ -56,7 +57,7 @@ class Game
     /**
      * @param string $date
      */
-    public function setDate(string $date): void
+    public function setDate(DateTime $date): void
     {
         $this->date = $date;
     }
@@ -96,7 +97,7 @@ class Game
     /**
      * @return string
      */
-    public function getFkSymbol1(): string
+    public function getFkSymbol1(): int
     {
         return $this->fk_symbol1;
     }
@@ -104,7 +105,7 @@ class Game
     /**
      * @param string $fk_symbol1
      */
-    public function setFkSymbol1(string $fk_symbol1): void
+    public function setFkSymbol1(int $fk_symbol1): void
     {
         $this->fk_symbol1 = $fk_symbol1;
     }
@@ -112,7 +113,7 @@ class Game
     /**
      * @return string
      */
-    public function getFkSymbol2(): string
+    public function getFkSymbol2(): int
     {
         return $this->fk_symbol2;
     }
@@ -120,7 +121,7 @@ class Game
     /**
      * @param string $fk_symbol2
      */
-    public function setFkSymbol2(string $fk_symbol2): void
+    public function setFkSymbol2(int $fk_symbol2): void
     {
         $this->fk_symbol2 = $fk_symbol2;
     }

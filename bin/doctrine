@@ -1,6 +1,5 @@
 #!/usr/bin/env php
 <?php
-// bin/doctrine
 use Htlw3r\DoctrineOrm\bootstrap;
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
 use Doctrine\ORM\Tools\Console\EntityManagerProvider\SingleManagerProvider;
