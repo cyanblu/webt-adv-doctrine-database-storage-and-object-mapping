@@ -16,7 +16,7 @@ class UserDataLoader implements FixtureInterface
         $game->setFkSymbol2('pa');
         $game->setPlayer1('Moritz');
         $game->setPlayer2('Chrisi');
-        $game->setDate(new \DateTime('2023-06-13 12:34:56'));
+        $game->setDate('2023-06-13');
 
         $manager->persist($game);
         $manager->flush();

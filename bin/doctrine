@@ -1,12 +1,11 @@
 #!/usr/bin/env php
 <?php
 // bin/doctrine
-namespace Htlw3r\DoctrineOrm\bin;
+use Htlw3r\DoctrineOrm\bootstrap;
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
 use Doctrine\ORM\Tools\Console\EntityManagerProvider\SingleManagerProvider;
 
-// Adjust this path to your actual bootstrap.php
-require 'bootstrap.php';
+require_once 'bootstrap.php';
 
 ConsoleRunner::run(
     new SingleManagerProvider($entityManager)

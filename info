@@ -4,4 +4,4 @@ insert, delete, update
 nurnoch php objekte
 
 php bin/doctrine orm:schema-tool:create
-php bin/doctrine doctrine:fixtures:load
+php bin/doctrine doctrinefixtures:load
